@@ -6,7 +6,207 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header>
+      <nav>
+        <a><img src="index.html" width="160" height="65" alt="Логотип Нёрдс"></a>
+        <ul>
+          <li><a href="body.html">Студия</a></li>
+          <li><a href="body.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <a href="blank.html">Корзина</a>
+          <h2>Магазин готовых шаблонов</h2>
+      </nav>
+    </header>
+
+    <main>
+          <section>
+            <Form action="https://echo.htmlacademy.ru" method="POST">
+              <fieldset>
+                <legend><h3>Стоимость:</h3></legend>
+                <ul>
+                  <li>
+                <p><input name="price-slider" type="range" min="0" max="15000" step="1" value="10000"></p>
+                  </li>
+                  <li>
+                <p><label for="filter-number-from" >От:</label>
+                <input name="number-from" id="filter-number-from" type="number" min="0" max="15000"
+                value="0"></p>
+                  </li>
+                  <li>
+                <p><label for="filter-number-to" >До:</label>
+                  <input name="number-to"  id="filter-number-to" type="number" min="0" max="15000"
+                  value="15000"></p>
+                  </li>
+              </ul>
+                </fieldset>
+                <fieldset>
+                  <legend><h3>Сетка:</h3></legend>
+                  <ul>
+                    <li>
+                      <input type="radio" name="product-grid" id="filter-adaptive" checked>
+                      <label for="filter-adaptive">Адаптивная</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="product-grid" id="filter-fixed">
+                      <label for="filter-fixed">Фиксированная</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="product-grid" id="filter-rubber">
+                      <label for="filter-rubber">Резиновая</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend><h3>Особенности:</h3></legend>
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="slider" id="filter-slider" checked>
+                      <label for="filter-slider">Слайдер</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="Advantages-block" id="filter-Advantages-block">
+                      <label for="filter-Advantages-block">Блок преимуществ</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="news" id="filter-news" checked>
+                      <label for="filter-news">Новости</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="gallery" id="filter-gallery">
+                      <label for="filter-gallery">Галлерея</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="basket" id="filter-basket">
+                      <label for="filter-basket">Корзина</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              <button type="submit">Показать</button>  
+            </form>
+          </section>
+
+          <section>
+            <form>
+              <fieldset>
+                <legend><h3>Сортировать:</h3></legend>
+                <ul>
+                  <li>
+                    <a href="#">По цене</a>
+                  </li>
+                  <li>
+                    <a href="#">По типу</a>
+                  </li>
+                  <li>
+                    <a href="#">По названию</a>
+                  </li>
+                  <li>
+                    <input type="radio" name="sorting" id="filter-from" checked>
+                    <label for="filter-from"></label>
+                    <input type="radio" name="sorting" id="filter-to">
+                    <label for="filter-to"></label>
+                  </li>
+                </ul>
+
+              </fieldset>
+            </form>
+          </section>
+
+          <section>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="#" width="358" height="578" alt="sedona">
+                  <!--всплывающее окно с описанием ценой и кнопкой-->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="#" width="358" height="578" alt="pink">
+                  <!--всплывающее окно с описанием ценой и кнопкой-->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="#" width="358" height="578" alt="borodinski">
+                  <!--всплывающее окно с описанием ценой и кнопкой-->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="#" width="358" height="578" alt="mishka">
+                  <!--всплывающее окно с описанием ценой и кнопкой-->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="#" width="358" height="578" alt="A+">
+                  <!--всплывающее окно с описанием ценой и кнопкой-->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="#" width="358" height="578" alt="kvast">
+                  <!--всплывающее окно с описанием ценой и кнопкой-->
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h3>sedona</h3>
+                <p>Информационный сайт<br> для туристов</p>
+                <button type="submit" name="add-to-cart">9900р</button>
+                </li>
+                </ul>
+          </section>
+
+          <section>
+            <ul>
+              <li>
+                <a>1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">следующая</a>
+              </li>
+            </ul>
+            </section>
+      </main>
+
+    <footer>
+      <section>
+        <!--Карта-->
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <address>
+          <p>191186, Санкт-Петербург<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+            тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+            <a href="blank.html">Напишите нам</a>
+        </address>
+      </section>
+
+      <section>
+        <h2>Давайте дружить, это выгодно!</h2>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+        <ul>
+          <li>
+            <a href="#">Вконтакте</a>
+          </li>
+          <li>
+            <a href="#">Фейсбук</a>
+          </li>
+          <li>
+            <a href="#">Инстаграм</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
 
   </body>
 </html>
