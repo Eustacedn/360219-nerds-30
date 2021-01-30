@@ -1,0 +1,178 @@
+@font-face  {
+  font-family: roboto;
+  src: local("font"),
+        local("my font"),
+        url("../fonts/roboto.woff2") format("woff2"),
+        url("../fonts/roboto.woff") format("woff");
+        font-weight: 400;
+        font-size: normal;
+}
+@font-face  {
+  font-family: roboto;
+  src: local("font"),
+        local("my font"),
+        url("../fonts/robotobold.woff2") format("woff2"),
+        url("../fonts/robotobold.woff") format("woff");
+        font-weight: 700;
+        font-size: normal;
+}
+@font-face  {
+  font-family: roboto;
+  src: local("font"),
+        local("my font"),
+        url("../fonts/robotomedium.woff2") format("woff2"),
+        url("../fonts/robotomedium.woff") format("woff");
+        font-weight: 500;
+        font-size: normal;
+}
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark-blue: #283136;
+  --basic-neutral: #666666;
+  --basic-grey: #4D4D4D;
+  --basic-light: #eeeeee;
+  --basic-light-hover: #DFDFDF;
+  --basic-light-push: #D5D5D5;
+  --basic-dark: #444444;
+  --basic-extra-light: #f8f5f2;
+  --basic-white: #ffffff;
+  --basic-red: #FB565A;
+  --basic-red-hover: #E74246;
+  --basic-red-push: #D7373B;
+  --basic-green: #00CA74;
+  --basic-green-hover: #00BC6C;
+  --basic-green-push: #00AA62;
+  --basic-yellow: #EFC849;
+  --basic-yellow-hover: #EAB534;
+  --basic-yellow-push: #E5A722;
+
+
+  --special: #663d15;
+}
+/* Global */
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(---basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--basic-light)
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-light);
+}
+
+.site-navigation a,
+.site-cart a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-cart a:hover {
+  color: var(--basic-red);
+}
+
+.site-navigation a:focus,
+.site-cart a:focus {
+  opacity: 30%;
+}
+
+h1 {
+  display: none;
+}
+.slider-container {
+  background-color: var(--basic-light);
+}
+.slider-container h2 {
+  font-weight: 500;
+  font-size:   55px;
+  line-height: 55px;
+}
+.slider-container p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-dark-blue);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offers .offers-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.features h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.features-list-stats {
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+.features-list-stats span {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+h4  {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+.adress h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.adress p{
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+.footer-social h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+.modal h2 {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+}
+.modal label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
