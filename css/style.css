@@ -67,6 +67,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
 }
 li {
   list-style: none;
@@ -90,7 +91,7 @@ img {
 
 .site-navigation a,
 .site-cart a {
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .site-navigation a:hover,
@@ -106,6 +107,12 @@ img {
 h1 {
   display: none;
 }
+.catalog-name {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  background-color: var(--basic-light);
+}
 .slider-container {
   background-color: var(--basic-light);
 }
@@ -120,7 +127,7 @@ h1 {
   color: var(--basic-dark-blue);
 }
 
-h3 {
+.offers-list h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -146,7 +153,7 @@ h3 {
   font-size: 45px;
   line-height: 64px;
 }
-h4  {
+.features h4  {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -175,4 +182,131 @@ h4  {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
+
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+
+.button:hover {
+  background-color: var(--basic-red-hover);
+}
+
+.button:active {
+  background-color: var(--basic-red-push);
+}
+
+.filters h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.filters .button {
+  background-color: var(--basic-light);
+  color: var(--basic-black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.filters .button:hover {
+  background-color: var(--basic-light-hover);
+}
+.filters .button:active {
+  background-color: var(--basic-light-push);
+}
+
+.filters label {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--basic-dark-blue);
+}
+
+.filter-range p{
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--basic-dark-blue);
+}
+
+.catalog a{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.catalog-sort-item{
+  opacity: 30%;
+}
+
+.catalog-sort-item:hover{
+  opacity: 60%;
+}
+.catalog-sort-item:active{
+  opacity: 100%;
+}
+.catalog-sort-item-active,
+.catalog-sort-item-active:active,
+.catalog-sort-item-active:hover{
+opacity: 100%;
+}
+.catsotitrad-1{
+  opacity: 100%;
+}
+.sort-radio-btn{
+  opacity: 30%;
+}
+.sort-radio-btn:hover{
+  opacity: 60%;
+}
+.sort-radio-btn:active{
+  opacity: 100%;
+}
+.sort-radio-btn-active,
+.sort-radio-btn-active:active
+.sort-radio-btn-active:hover{
+  opacity: 100%;
+}
+.catalog-item-sed-price{
+  background-color: var(--basic-light);
+}
+.catalog-item-sed-price h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+.catalog-item-sed-price p{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-neutral);
+}
+.pagination-item a {
+  background-color: var(--basic-light);
+}
+.pagination-item a:hover{
+  background-color: var(--basic-light-hover);
+}
+.pagination-item a:active{
+  background-color: var(--basic-light-push);
+  opacity: 30%;
+}
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  background-color: var(--basic-white);
 }
