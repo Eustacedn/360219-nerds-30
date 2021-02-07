@@ -15,122 +15,114 @@
 <body class="page-body">
 
   <header class="header">
-    <nav class="navigation">
-      <a href="index.html" class="navigation-logo">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="body.html">Студия</a></li>
-        <li><a href="body.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
-      </ul>
+    <div class="container-head">
+      <nav class="navigation">
+        <a href="index.html">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="body.html">Студия</a></li>
+          <li><a href="body.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </nav>
       <div class="site-cart">
         <a href="blank.html">Корзина</a>
       </div>
-    </nav>
+    </div>
     <h2 class="catalog-name">Магазин готовых шаблонов</h2>
   </header>
 
   <main class="main-catalog container">
     <section class="filters">
       <div class="filters-container">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset>
+        <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
           <legend>
             <h3>Стоимость:</h3>
           </legend>
-          <ul class="filter-option filter-range">
-            <li>
-              <p><input name="price-slider" type="range" min="0" max="15000" step="1" value="10000"></p>
-            </li>
-            <li>
-              <p><label for="filter-number-from">От:</label>
-                <input name="number-from" id="filter-number-from" type="number" min="0" max="15000" value="0">
-              </p>
-            </li>
-            <li>
-              <p><label for="filter-number-to">До:</label>
-                <input name="number-to" id="filter-number-to" type="number" min="0" max="15000" value="15000">
-              </p>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>
-            <h3>Сетка:</h3>
-          </legend>
-          <ul class="filter-option filter-radio">
-            <li>
-              <input type="radio" name="product-grid" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
-            </li>
-            <li>
-              <input type="radio" name="product-grid" id="filter-fixed">
-              <label for="filter-fixed">Фиксированная</label>
-            </li>
-            <li>
-              <input type="radio" name="product-grid" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>
-            <h3>Особенности:</h3>
-          </legend>
-          <ul class="filter-option filter-checkbox">
-            <li>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
-              <label for="filter-slider">Слайдер</label>
-            </li>
-            <li>
-              <input type="checkbox" name="Advantages-block" id="filter-Advantages-block">
-              <label for="filter-Advantages-block">Блок преимуществ</label>
-            </li>
-            <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
-            </li>
-            <li>
-              <input type="checkbox" name="gallery" id="filter-gallery">
-              <label for="filter-gallery">Галлерея</label>
-            </li>
-            <li>
-              <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="filter-button" type="submit">Показать</button>
-      </form>
+          <div class="filter-option">
+            <div class="filter-slider">
+              <input name="price-slider" type="range" min="0" max="15000" step="1" value="10000">
+            </div>
+            <div class="filter-cost">
+              <label class="filter-cost-label" for="filter-number-from">От</label>
+              <input name="number-from" id="filter-number-from" type="number" min="0" max="15000" value="0">
+              <label class="filter-cost-label" for="filter-number-to">До</label>
+              <input name="number-to" id="filter-number-to" type="number" min="0" max="15000" value="15000">
+            </div>
+          </div>
+          <fieldset>
+            <legend>
+              <h3>Сетка:</h3>
+            </legend>
+            <ul class="filter-option filter-radio">
+              <li>
+                <input type="radio" name="product-grid" id="filter-adaptive" checked>
+                <label class="filter-option-label" for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="product-grid" id="filter-fixed">
+                <label class="filter-option-label" for="filter-fixed">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="product-grid" id="filter-rubber">
+                <label class="filter-option-label" for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h3>Особенности:</h3>
+            </legend>
+            <ul class="filter-option filter-checkbox">
+              <li>
+                <input type="checkbox" name="slider" id="filter-slider" checked>
+                <label class="filter-option-label" for="filter-slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Advantages-block" id="filter-Advantages-block">
+                <label class="filter-option-label" for="filter-Advantages-block">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news" id="filter-news" checked>
+                <label class="filter-option-label" for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                <label class="filter-option-label" for="filter-gallery">Галлерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="basket" id="filter-basket">
+                <label class="filter-option-label" for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
       </div>
     </section>
 
     <section class="catalog">
       <form class="catalog-filter">
-        <fieldset>
-          <legend class="catalog-id">
-            <h3>Сортировать:</h3>
-          </legend>
-          <ul class="catalog-sort">
-            <li class="catalog-sort-item catalog-sort-item-active">
-              <a href="#">По цене</a>
-            </li>
-            <li class="catalog-sort-item">
-              <a href="#">По типу</a>
-            </li>
-            <li class="catalog-sort-item">
-              <a href="#">По названию</a>
-            </li>
-            <li class="catalog-sort-item-radio">
-              <input class="sort-radio-btn sort-radio-btn-active" type="radio" name="sorting" id="filter-from" checked>
-              <label for="filter-from"></label>
-              <input class="sort-radio-btn" type="radio" name="sorting" id="filter-to">
-              <label for="filter-to"></label>
-            </li>
-          </ul>
-        </fieldset>
+        <h3>Сортировать:</h3>
+        <ul class="catalog-sort">
+          <li class="catalog-sort-item catalog-sort-item-active">
+            <a href="#">По цене</a>
+          </li>
+          <li class="catalog-sort-item">
+            <a href="#">По типу</a>
+          </li>
+          <li class="catalog-sort-item">
+            <a href="#">По названию</a>
+          </li>
+          <li class="catalog-sort-item-radio">
+            <input class="sort-radio-btn sort-radio-btn-active" type="radio" name="sorting" id="filter-from" checked>
+            <label for="filter-from"></label>
+            <input class="sort-radio-btn" type="radio" name="sorting" id="filter-to">
+            <label for="filter-to"></label>
+          </li>
+        </ul>
       </form>
       <ul class="catalog-items">
         <li class="catalog-item">
