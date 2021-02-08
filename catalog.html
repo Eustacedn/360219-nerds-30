@@ -34,7 +34,7 @@
     <h2 class="catalog-name">Магазин готовых шаблонов</h2>
   </header>
 
-  <main class="main-catalog container">
+  <main class="main-catalog">
     <section class="filters">
       <div class="filters-container">
         <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
@@ -128,8 +128,12 @@
         <li class="catalog-item">
           <a href="#">
             <img src="img/img-sedona.jpg" width="358" height="578" alt="sedona">
-            <!--всплывающее окно с описанием ценой и кнопкой-->
           </a>
+          <div class="card-price sedona">
+            <h3>sedona</h3>
+          <p>Информационный сайт<br> для туристов</p>
+          <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
+          </div>
         </li>
         <li class="catalog-item">
           <a href="#">
@@ -176,16 +180,6 @@
           <a href="#">следующая</a>
         </li>
       </ul>
-      <!--всплывающее окно
-      <ul>
-        <li class="catalog-item-sed-price">
-          <h3>sedona</h3>
-          <p>Информационный сайт<br> для туристов</p>
-          <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
-        </li>
-      </ul>
-      -->
-    </section>
   </main>
 
   <footer class="footer">
