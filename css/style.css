@@ -123,7 +123,7 @@ img {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-image: url(/img/cart-icon.svg);
+  background-image: url(../img/cart-icon.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   top: 2px;
@@ -202,19 +202,19 @@ img {
   display: block;
 }
 .slider:nth-child(1) {
-  background: url("/img/nerds-index-slide1.png");
+  background: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 431px;
 }
 .slider:nth-child(2) {
-  background: url("/img/nerds-index-slide2.png");
+  background: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 431px;
 }
 .slider:nth-child(3) {
-  background: url("/img/nerds-index-slide3.png");
+  background: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 431px;
@@ -520,17 +520,17 @@ img {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .social-item-vk {
-  background-image: url(/img/vk-icon.png);
+  background-image: url(../img/vk-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .social-item-fb {
-  background-image: url(/img/fb-icon.png);
+  background-image: url(../img/fb-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 .social-item-inst {
-  background-image: url(/img/insta-icon.png);
+  background-image: url(../img/insta-icon.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -636,7 +636,7 @@ img {
   cursor: pointer;
   border: 0;
   background: none;
-  background-image: url(/img/close-cross.png);
+  background-image: url(../img/close-cross.png);
   opacity: .3;
 }
 .modal-close:hover {
@@ -758,13 +758,10 @@ img {
   border-radius: 50%;
   opacity: 60%;
 }
-.filter-input-radio + label:hover::before {
-  opacity: 100%;
-}
+.filter-input-radio + label:hover::before,
 .filter-input-radio:checked + label:hover::after{
   opacity: 100%;
 }
-
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -779,7 +776,7 @@ img {
 .filter-checkbox-item + label::before {
   content: "";
   position: absolute;
-  background-image: url(/img/icons/checkbox-off.svg);
+  background-image: url(../img/icons/checkbox-off.svg);
   background-repeat: no-repeat;
   width: 23px;
   height: 23px;
@@ -787,16 +784,14 @@ img {
   left: -40px;
   opacity: 60%;
 }
-.filter-checkbox-item + label:hover::before {
-  opacity: 100%;
-}
+.filter-checkbox-item + label:hover::before,
 .filter-checkbox-item:checked + label:hover:before{
   opacity: 100%;
 }
 .filter-checkbox-item:checked + label::before {
   content: "";
   position: absolute;
-  background-image: url(/img/icons/Component\ 1.svg);
+  background-image: url(../img/icons/Component\ 1.svg);
   background-repeat: no-repeat;
   opacity: 60%;
   width: 25.74px;
@@ -872,10 +867,8 @@ img {
 .catalog-item a:hover::before{
   opacity: 100%;
 }
-.catalog-item:hover {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-}
 .catalog-item:hover .card-price {
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   display: block;
 }
 .catalog-item a::after {
@@ -896,7 +889,6 @@ img {
   position: absolute;
   top: 346px;
   text-align: center;
-  z-index: 1;
   display: none;
 }
 .card-price h3{
@@ -1002,7 +994,7 @@ opacity: 100%;
 
 .sort-radio-btn-active::before{
   content: "";
-  background-image: url("/img/icons/icon-down-dir.svg");
+  background-image: url("../img/icons/icon-down-dir.svg");
   width: 11px;
   height: 10px;
   top: 6px;
@@ -1012,7 +1004,7 @@ opacity: 100%;
 
 .sort-radio-btn-passive::before{
   content: "";
-  background-image: url("/img/icons/icon-up-dir.svg");
+  background-image: url("../img/icons/icon-up-dir.svg");
   width: 11px;
   height: 10px;
   top: 6px;
