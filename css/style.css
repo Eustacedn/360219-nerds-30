@@ -58,7 +58,6 @@
   font-weight: 400;
   color: var(---basic-black);
   background-color: var(--basic-white);
-  min-width: 1160px;
 }
 
 a {
@@ -71,7 +70,6 @@ li {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 .visuality-hidden {
   display: none;
@@ -90,9 +88,6 @@ img {
 }
 
 /* Grid */
-.page {
-  height: 100%;
-}
 .header {
   margin-bottom: 0;
   padding-top: 75px;
@@ -172,11 +167,6 @@ img {
   color: var(--basic-black);
   opacity: 30%;
 }
-
-.header {
-  background-color: var(--basic-light);
-}
-
 /*main*/
 .slider-main {
   background-color: var(--basic-light);
@@ -298,6 +288,7 @@ img {
 .container {
   display: grid;
   grid-gap: 80px;
+  margin-bottom: 80px;
 }
 
 .offers-list {
@@ -452,6 +443,7 @@ img {
   height: 52px;
   background-color: var(--basic-light);
   left: -3px;
+  top: 16px;
 }
 .partners-list-academy::after {
   display: none;
@@ -460,17 +452,37 @@ img {
 .footer {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 68px;
 }
-.adress {
-  font-style: normal;
+.adress-section {
+  background-image: url(../img/map1.jpg);
+  display: block;
+  width: 1440px;
+  height: 416px;
+  position: relative;
+  right: 136px;
 }
-.adress-form {
+.adress-form::before {
+  background-image: url(../img/map-marker.png);
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  content: "";
+  left: 819px;
+  top: 81px;
+}
+.adress-form .adress {
   display: block;
   box-sizing: border-box;
   width: 319px;
   height: 308px;
   background-color: var(--basic-white);
   padding: 40px 50px;
+  font-style: normal;
+  margin: 0 auto;
+  position: relative;
+  top: 53px;
+  right: 421px;
 }
 .adress-form .button {
   display: table-cell;
@@ -1031,7 +1043,7 @@ opacity: 100%;
 .pagination-list {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin-bottom: 60px;
 }
 .pagination-item a{
   display: table-cell;
