@@ -553,7 +553,7 @@ img {
   background-color: #e1e1e1;
   font-size: 0;
 }
-.adress h3{
+.adress span{
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -747,7 +747,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .filters ul {
   margin: 0;
