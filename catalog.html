@@ -30,7 +30,7 @@
         <ul class="site-navigation">
           <li><a href="body.html">Студия</a></li>
           <li><a href="body.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
       </nav>
@@ -223,7 +223,7 @@
           </p>
           <p>
             тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a class="button" href="blank.html">Напишите нам</a>
+          <a class="button-address button" href="blank.html">Напишите нам</a>
         </address>
       </div>
     </section>
@@ -244,25 +244,26 @@
       </div>
     </section>
   </footer>
-  <section class="modal">
+  <section class="modal modal-screen">
     <h2>Напишите нам</h2>
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-item1">
         <label for="text-name">Ваше имя:</label>
-        <input id="text-name" type="text" name="login" placeholder="Имя Фамилия">
+        <input class="modal-input-login" id="text-name" type="text" name="login" placeholder="Имя Фамилия" autofocus required>
       </p>
       <p class="modal-item1">
         <label for="text-email">Ваш email:</label>
-        <input id="text-email" type="email" name="email" placeholder="email@example.com">
+        <input class="modal-input-mail" id="text-email" type="email" name="email" placeholder="email@example.com" required>
       </p>
       <p class="modal-item2">
         <label for="text-post">Текст письма:</label>
-        <textarea class="text-field" id="text-post" name="text-field" placeholder="В свободной форме"></textarea>
+        <textarea class="text-field" id="text-post" name="text-field" placeholder="В свободной форме" required></textarea>
         <button class="button" type="submit">Отправить</button>
       </p>
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+<script src="/js/modal.js"></script>
 
 </body>
 

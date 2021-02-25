@@ -90,7 +90,7 @@ img {
 /* Grid */
 .header {
   margin-bottom: 0;
-  padding-top: 75px;
+  padding-top: 47px;
   background-color: var(--basic-light);
 }
 
@@ -106,12 +106,18 @@ img {
 .site-logo:active path {
   fill: rgba(0, 0, 0, 0.3);
 }
+.site-logo {
+  height: 66px;
+}
 .site-cart {
   margin-left: auto;
   align-self: center;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
+  height: 38px;
+  align-self: flex-end;
+  line-height: 30px;
 }
 .site-cart-link::before {
   content: "";
@@ -139,33 +145,29 @@ img {
   width: 437px;
   justify-content: space-between;
   margin: 0;
-  align-self: center;
+  align-self: flex-end;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+  height: 38px;
 }
-
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-light);
-}
-
 .site-navigation a,
 .site-cart a {
   color: var(--basic-black);
 }
-
 .site-navigation a:hover,
 .site-cart a:hover {
   color: var(--basic-red);
-  border-bottom: 2px solid var(--basic-red);
   padding-bottom: 13px;
 }
-
 .site-navigation a:focus,
 .site-cart a:focus {
   color: var(--basic-black);
   opacity: 30%;
+}
+.site-navigation-current {
+  border-bottom: 2px solid var(--basic-red);
 }
 /*main*/
 .slider-main {
@@ -228,7 +230,7 @@ img {
 .sliderswitch {
   position: relative;
   display: flex;
-  width: 88px;
+  width: 99px;
   justify-content: space-between;
   justify-self: center;
   top: -66px;
@@ -241,8 +243,7 @@ img {
   height: 18px;
   border-radius: 50%;
   background: white;
-  top: 3px;
-  left: -5px;
+  left: -12px;
 }
 .sliderswitch-input:checked + label::after {
   content: "";
@@ -252,8 +253,8 @@ img {
   height: 8px;
   border-radius: 50%;
   border: 2px solid #C1C1C1;
-  top: 8px;
-  left: 0px;
+  top: 3px;
+  left: -4px;
   box-sizing: border-box;
 }
 .button-slide1,
@@ -296,7 +297,8 @@ img {
   width: 1157px;
   margin: 0 auto;
   padding: 0;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 100px;
 }
 
 .offers-list h3 {
@@ -402,6 +404,9 @@ img {
   list-style: none;
   padding: 0;
 }
+.features-list-stats li {
+  padding-right: 22px;
+}
 .features-list-stats span {
   font-weight: bold;
   font-size: 45px;
@@ -484,7 +489,7 @@ img {
   top: 53px;
   right: 421px;
 }
-.adress-form .button {
+.button-address {
   display: table-cell;
   width: 219px;
   height: 50px;
@@ -505,6 +510,7 @@ img {
 .button:active {
   background-color: var(--basic-red-push);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: rgba(255, 255, 255, 0.3);
 }
 .footer-social {
   display: grid;
@@ -522,7 +528,6 @@ img {
   display: flex;
   width: 261px;
   justify-content: space-between;
-  margin-left: 45px;
 }
 .social-list a:hover {
   background-color: var(--basic-red-hover);
@@ -530,6 +535,9 @@ img {
 .social-list a:active {
   background-color: var(--basic-red-push);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.social-list img:active {
+  color:rgba(255, 255, 255, 0.3)
 }
 .social-item-vk {
   background-image: url(../img/vk-icon.png);
@@ -562,6 +570,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
+  margin-bottom: 37px;
+  margin-top: 22px;
 }
 .footer-social h2 {
   font-weight: bold;
@@ -570,7 +580,7 @@ img {
   margin: 0 auto;
 }
 .modal {
-  left: 225px;
+  left: 50%;
   width: 960px;
   height: 590px;
   margin: 0 auto;
@@ -579,9 +589,18 @@ img {
   position: fixed;
   box-shadow: 0px 20px 40px rgb(0 0 0 / 40%);
   background-color: white;
-  top: 350px;
+  top: 50%;
   z-index: 100;
   display: none;
+  margin-left: -480px;
+  margin-top: -300px;
+}
+.modal-show {
+  display: block;
+}
+.modal-error {
+  -webkit-animation: shake .6s;
+  animation: shake .6s;
 }
 .modal-form {
   display: flex;
@@ -594,6 +613,9 @@ img {
   margin: 0;
   margin-right: 40px;
 }
+.modal-item2 {
+  margin-top: 34px;
+}
 .text-field {
   width: 760px;
   height: 115px;
@@ -601,6 +623,7 @@ img {
   box-sizing: border-box;
   border-radius: 3px;
   margin-top: 9px;
+  padding: 15px;
 }
 .modal h2 {
   font-weight: bold;
@@ -613,13 +636,16 @@ img {
   font-size: 16px;
   line-height: 18px;
 }
-.modal label:focus {
-  color: #000000;
+.modal-input:invalid {
+  color: var(--basic-red-hover);
+  border: 2px solid var(--basic-red-hover)
 }
 .modal-item1 input {
   border: 2px solid #D7DCDE;
   box-sizing: border-box;
   border-radius: 3px;
+  padding: 15px;
+  margin-top: 9px;
 }
 .modal-form button {
   display: table-cell;
@@ -649,12 +675,14 @@ img {
   border: 0;
   background: none;
   background-image: url(../img/close-cross.png);
-  opacity: .3;
+  opacity: 0.3;
 }
 .modal-close:hover {
   opacity: 100%;
 }
-
+.modal-close:active {
+  opacity: 10%;
+}
 /*Catalog*/
 .filter-item {
   margin: 0;
@@ -860,12 +888,12 @@ img {
 }
 .catalog-item img {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 0px 0px 5px 5px;
 }
 .catalog-items li {
   margin-top: 30px;
 }
-.catalog-item a::before{
+.catalog-item::before{
   content: "";
   position: absolute;
   width: 360px;
@@ -876,14 +904,7 @@ img {
   top: -39px;
   opacity: 12%;
 }
-.catalog-item a:hover::before{
-  opacity: 100%;
-}
-.catalog-item:hover .card-price {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
-  display: block;
-}
-.catalog-item a::after {
+.catalog-item::after {
   content: "";
   position: absolute;
   width: 14px;
@@ -894,12 +915,21 @@ img {
   left: 39px;
   box-shadow: -25px 0 0 0 var(--basic-white), 25px 0 0 0 var(--basic-white);
 }
+.catalog-item:hover {
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
+}
+.catalog-item:hover::before{
+  opacity: 100%;
+}
+.catalog-item:hover .card-price {
+  display: block;
+}
 .card-price {
   width: 360px;
   height: 231px;
   background-color: var(--basic-light);
   position: absolute;
-  top: 346px;
+  top: 350px;
   text-align: center;
   display: none;
 }
@@ -1087,4 +1117,25 @@ opacity: 100%;
   border: 3px solid var(--basic-light-dark);
   background-color: var(--basic-white);
   box-sizing: border-box;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
