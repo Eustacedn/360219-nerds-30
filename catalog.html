@@ -43,10 +43,9 @@
 
   <main class="main-catalog">
     <section class="filters">
-      <div class="filters-container">
         <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
+            <legend><h3>Стоимость:</h3></legend>
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
@@ -114,11 +113,10 @@
           </fieldset>
           <button class="filter-button" type="submit">Показать</button>
         </form>
-      </div>
     </section>
     <section class="catalog">
       <form class="catalog-filter">
-        <h3>Сортировать:</h3>
+        <legend><h3>Сортировать:</h3></legend>
         <ul class="catalog-sort">
           <li class="catalog-sort-item catalog-sort-item-active">
             <a href="#">По цене</a>
@@ -219,11 +217,9 @@
         <address class="adress">
           <span>NЁRDS DESIGN STUDIO</span>
           <p>191186, Санкт-Петербург<br>
-            ул. Б. Конюшенная, д. 19/8<br>
-          </p>
-          <p>
+            ул. Б. Конюшенная, д. 19/8<br><br>
             тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a class="button-address button" href="blank.html">Напишите нам</a>
+          <a class="button-address button" href="#">Напишите нам</a>
         </address>
       </div>
     </section>
@@ -234,12 +230,12 @@
       </div>
       <div class="social-selection">
         <div class="social-list">
-          <a class="social-item social-item-vk" href="#">Вконтакте
-          </a>
-          <a class="social-item social-item-fb" href="#">Фейсбук
-          </a>
-          <a class="social-item social-item-inst" href="#">Инстаграмм
-          </a>
+            <a class="social-item social-item-vk" href="#">Вконтакте
+            </a>
+            <a class="social-item social-item-fb" href="#">Фейсбук
+            </a>
+            <a class="social-item social-item-inst" href="#">Инстаграмм
+            </a>
         </div>
       </div>
     </section>
@@ -249,15 +245,15 @@
     <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-item1">
         <label for="text-name">Ваше имя:</label>
-        <input class="modal-input-login" id="text-name" type="text" name="login" placeholder="Имя Фамилия" autofocus required>
+        <input class="modal-input-login" id="text-name" type="text" name="login" placeholder="Имя Фамилия" autofocus>
       </p>
       <p class="modal-item1">
         <label for="text-email">Ваш email:</label>
-        <input class="modal-input-mail" id="text-email" type="email" name="email" placeholder="email@example.com" required>
+        <input class="modal-input-mail" id="text-email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p class="modal-item2">
         <label for="text-post">Текст письма:</label>
-        <textarea class="text-field" id="text-post" name="text-field" placeholder="В свободной форме" required></textarea>
+        <textarea class="text-field" id="text-post" name="text-field" placeholder="В свободной форме"></textarea>
         <button class="button" type="submit">Отправить</button>
       </p>
     </form>

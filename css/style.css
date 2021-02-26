@@ -151,6 +151,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   height: 38px;
+  position: relative;
 }
 .site-navigation a,
 .site-cart a {
@@ -166,8 +167,14 @@ img {
   color: var(--basic-black);
   opacity: 30%;
 }
-.site-navigation-current {
-  border-bottom: 2px solid var(--basic-red);
+.site-navigation-current::after {
+  position: absolute;
+  content: "";
+  width: 73px;
+  height: 2px;
+  background-color: var(--basic-red-hover);
+  top: 44px;
+  right: 134px;
 }
 /*main*/
 .slider-main {
@@ -180,12 +187,6 @@ img {
   padding: 0;
   width: 1157px;
   height: 431px;
-  background-color: var(--basic-light);
-}
-.catalog-name {
-  font-weight: 500;
-  font-size: 55px;
-  line-height: 55px;
   background-color: var(--basic-light);
 }
 .slider {
@@ -710,12 +711,10 @@ img {
   padding: 0;
   border: none;
 }
-.filter {
-  margin-top: 20px;
-}
 .range-filter {
   width: 260px;
-  margin-top: 49px;
+  margin-top: 35px;
+
 }
 
 .filter-item legend {
@@ -796,11 +795,10 @@ img {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .filters ul {
   margin: 0;
-  padding-bottom: 25px;
 }
 .filter-option label {
   position: relative;
@@ -863,9 +861,13 @@ img {
 }
 .catalog-name {
   margin: auto;
-  padding-top: 72px;
-  padding-bottom: 108px;
+  padding-top: 80px;
+  padding-bottom: 107px;
   text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  background-color: var(--basic-light);
 }
 .main-catalog {
   margin: auto;
@@ -873,7 +875,7 @@ img {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 400px 760px;
-  margin-top: 55px;
+  margin-top: 40px;
 }
 .catalog-filter {
   display: grid;
@@ -896,15 +898,11 @@ img {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 800px;
-  margin: 0;
   padding: 0;
+  grid-row-gap: 37px;
 }
 
 .catalog-item {
-  max-width: 360px;
-  max-height: 577px;
-  margin-right: 42px;
-  margin-bottom: 32px;
   position: relative;
 }
 .catalog-item img {
@@ -1060,8 +1058,8 @@ opacity: 100%;
   background-image: url("../img/icons/icon-down-dir.svg");
   width: 11px;
   height: 10px;
-  top: 6px;
-  left: 1px;
+  top: 7px;
+  left: 7px;
   position: absolute;
 }
 
