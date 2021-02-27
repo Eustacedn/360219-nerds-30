@@ -880,7 +880,7 @@ img {
 .catalog-filter {
   display: grid;
   grid-template-columns: 1fr 360px;
-  margin-bottom: 41px;
+  margin-bottom: 73px;
 }
 .filter-option {
   margin-bottom: 20px;
@@ -895,11 +895,11 @@ img {
 
 .main-catalog .catalog-items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  width: 800px;
+  grid-template-columns: 358px 358px;
+  grid-template-rows: 578px 578px 578px;
   padding: 0;
-  grid-row-gap: 37px;
+  grid-row-gap: 71px;
+  grid-column-gap: 42px;
 }
 
 .catalog-item {
@@ -908,9 +908,6 @@ img {
 .catalog-item img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 5px 5px;
-}
-.catalog-items li {
-  margin-top: 30px;
 }
 .catalog-item::before{
   content: "";
