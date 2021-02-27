@@ -1090,23 +1090,30 @@ opacity: 100%;
   display: flex;
   padding: 0;
   margin-bottom: 60px;
+  margin-top: 55px;
 }
 .pagination-item a{
   display: table-cell;
-  width: 47px;
-  height: 47px;
+  width: 50px;
+  height: 50px;
   background-color: var(--basic-light);
   border-radius: 3px;
   margin-left: 10px;
   text-align: center;
   vertical-align: middle;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 .pagination-item {
-  padding: 10px;
+  padding: 0px;
+  padding-right: 11px;
 }
 .pagination-item-current{
   background-color: var(--basic-white);
-  padding-left: 0;
+  padding: 0;
+  padding-right: 11px;
 }
 
 .pagination-next a{
