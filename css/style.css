@@ -190,28 +190,28 @@ img {
   background-color: var(--basic-light);
 }
 .slider {
-  display: none;
-}
-.slide-current {
-  display: block;
-}
-.slider:nth-child(1) {
   background: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 431px;
+  display: none;
 }
-.slider:nth-child(2) {
+.slider2 {
   background: url("../img/nerds-index-slide2.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 431px;
+  display: none;
 }
-.slider:nth-child(3) {
+.slider3 {
   background: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
   background-position: right;
   height: 431px;
+  display: none;
+}
+.slide-current {
+  display: block;
 }
 .slider-container h3{
   font-style: normal;
@@ -619,6 +619,7 @@ img {
 }
 .modal-show {
   display: block;
+  animation: bounce .6s;
 }
 .modal-error {
   -webkit-animation: shake .6s;
@@ -1160,5 +1161,22 @@ opacity: 100%;
   60%,
   80% {
     transform: translateX(10px);
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
