@@ -124,7 +124,7 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: 26px;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
@@ -135,7 +135,7 @@ sub {
 }
 
 sup {
-  top: -0.3em;
+  top: -0.6em;
 }
 
 /* Embedded content

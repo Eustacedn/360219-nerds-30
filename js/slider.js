@@ -3,13 +3,13 @@ var openedTab = function(evt){
   var blocks = document.querySelectorAll(".slider-container > div")
   for(var j = 0; j < blocks.length; j++){
       blocks[j].classList.remove("slide-current")
-    if(evt.currentTarget.id === "btn1"){
+    if(evt.target.id === "btn1"){
       blocks[0].classList.add("slide-current");
     }
-    if(evt.currentTarget.id === "btn2"){
+    if(evt.target.id === "btn2"){
       blocks[1].classList.add("slide-current");
     }
-    if(evt.currentTarget.id === "btn3"){
+    if(evt.target.id === "btn3"){
       blocks[2].classList.add("slide-current");
     }
   }
