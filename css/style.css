@@ -987,6 +987,7 @@ img {
   top: 350px;
   text-align: center;
   display: none;
+  overflow: auto;
 }
 .card-price h3{
   margin-top: 26px;
