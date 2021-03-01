@@ -34,10 +34,11 @@ close.addEventListener("click", function (event) {
 
 form.addEventListener("submit", function (event) {
         if (!login.value || !password.value) {
+        event.preventDefault();
         popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
         console.log("Нужно ввести имя и электронную почту");
         popup.classList.add("modal-error");
-        event.preventDefault();
     } else {
         localStorage.setItem("login", login.value);
         localStorage.setItem("mail", password.value);
