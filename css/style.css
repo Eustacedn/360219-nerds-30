@@ -569,6 +569,16 @@ img {
   margin-bottom: 68px;
 }
 
+.adress-map {
+  overflow:hidden;
+  position:relative;
+}
+.adress-map iframe {
+  height:418px;
+  width:100%;
+  position:relative;
+}
+
 .adress-section {
   display: block;
   height: 416px;
@@ -586,7 +596,7 @@ img {
   margin: 0 auto;
   position: relative;
   top: -361px;
-  right: 400px;
+  right: 417px;
 }
 
 .button-address {
@@ -1013,7 +1023,7 @@ img {
 .filter-checkbox-item:checked + label::before {
   content: "";
   position: absolute;
-  background-image: url(../img/icons/Component\ 1.svg);
+  background-image: url(../img/icons/checkbox-on.svg);
   background-repeat: no-repeat;
   opacity: 60%;
   width: 25.74px;

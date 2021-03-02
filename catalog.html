@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="img/icons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/minstyle.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -43,76 +43,78 @@
 
   <main class="main-catalog">
     <section class="filters">
-        <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="filter-item">
-            <legend><h3>Стоимость:</h3></legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset class="filter-item">
+          <legend>
+            <h3>Стоимость:</h3>
+          </legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  от <input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                  до <input type="text" name="max-price" value="15 000">
-                </label>
-              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
             </div>
-          </fieldset>
-          <fieldset class="filters-grid">
-            <legend>
-              <h3>Сетка:</h3>
-            </legend>
-            <ul>
-              <li class="filter-option filter-radio">
-                <input class="hidden filter-input-radio" type="radio" name="product-grid" id="filter-adaptive" checked>
-                <label class="filter-option-label" for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="hidden filter-input-radio" type="radio" name="product-grid" id="filter-fixed">
-                <label class="filter-option-label" for="filter-fixed">Фиксированная</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="hidden filter-input-radio" type="radio" name="product-grid" id="filter-rubber">
-                <label class="filter-option-label" for="filter-rubber">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filters-features">
-            <legend>
-              <h3>Особенности:</h3>
-            </legend>
-            <ul>
-              <li class="filter-option filter-checkbox">
-                <input class="hidden filter-checkbox-item" type="checkbox" name="slider" id="filter-slider" checked>
-                <label class="filter-option-label" for="filter-slider">Слайдер</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="hidden filter-checkbox-item" type="checkbox" name="Advantages-block"
-                  id="filter-Advantages-block">
-                <label class="filter-option-label" for="filter-Advantages-block">Блок преимуществ</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="hidden filter-checkbox-item" type="checkbox" name="news" id="filter-news" checked>
-                <label class="filter-option-label" for="filter-news">Новости</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="hidden filter-checkbox-item" type="checkbox" name="gallery" id="filter-gallery">
-                <label class="filter-option-label" for="filter-gallery">Галерея</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="hidden filter-checkbox-item" type="checkbox" name="basket" id="filter-basket">
-                <label class="filter-option-label" for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="filter-button" type="submit">Показать</button>
-        </form>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="text" name="max-price" value="15 000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filters-grid">
+          <legend>
+            <h3>Сетка:</h3>
+          </legend>
+          <ul>
+            <li class="filter-option filter-radio">
+              <input class="hidden filter-input-radio" type="radio" name="product-grid" id="filter-adaptive" checked>
+              <label class="filter-option-label" for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="hidden filter-input-radio" type="radio" name="product-grid" id="filter-fixed">
+              <label class="filter-option-label" for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="hidden filter-input-radio" type="radio" name="product-grid" id="filter-rubber">
+              <label class="filter-option-label" for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filters-features">
+          <legend>
+            <h3>Особенности:</h3>
+          </legend>
+          <ul>
+            <li class="filter-option filter-checkbox">
+              <input class="hidden filter-checkbox-item" type="checkbox" name="slider" id="filter-slider" checked>
+              <label class="filter-option-label" for="filter-slider">Слайдер</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="hidden filter-checkbox-item" type="checkbox" name="Advantages-block"
+                id="filter-Advantages-block">
+              <label class="filter-option-label" for="filter-Advantages-block">Блок преимуществ</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="hidden filter-checkbox-item" type="checkbox" name="news" id="filter-news" checked>
+              <label class="filter-option-label" for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="hidden filter-checkbox-item" type="checkbox" name="gallery" id="filter-gallery">
+              <label class="filter-option-label" for="filter-gallery">Галерея</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="hidden filter-checkbox-item" type="checkbox" name="basket" id="filter-basket">
+              <label class="filter-option-label" for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter-button" type="submit">Показать</button>
+      </form>
     </section>
     <section class="catalog">
       <form class="catalog-filter">
@@ -139,7 +141,9 @@
             <img src="img/img-sedona.jpg" width="358" height="578" alt="sedona">
           </a>
           <div class="card-price">
-            <a href="#"><h3>sedona</h3></a>
+            <a href="#">
+              <h3>sedona</h3>
+            </a>
             <p>Информационный сайт<br>для туристов</p>
             <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
           </div>
@@ -149,7 +153,9 @@
             <img src="img/img-pink.jpg" width="358" height="578" alt="pink">
           </a>
           <div class="card-price">
-            <a href="#"><h3>pink</h3></a>
+            <a href="#">
+              <h3>pink</h3>
+            </a>
             <p>Меняет мир<br>вокруг</p>
             <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
           </div>
@@ -159,17 +165,21 @@
             <img src="img/img-barbershop.jpg" width="358" height="578" alt="borodinski">
           </a>
           <div class="card-price">
-            <a href="#"><h3>borodinski</h3></a>
+            <a href="#">
+              <h3>borodinski</h3>
+            </a>
             <p>Стрижка у нас<br>это выгодно!</p>
             <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
           </div>
         </li>
         <li class="catalog-item">
           <a href="#">
-            <img src="img/Mask-Group.jpg" width="358" height="578" alt="mishka">
+            <img src="img/img-mishka.jpg" width="358" height="578" alt="mishka">
           </a>
           <div class="card-price">
-            <a href="#"><h3>mishka</h3></a>
+            <a href="#">
+              <h3>mishka</h3>
+            </a>
             <p>Милые штуки ручной<br>работы для дома</p>
             <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
           </div>
@@ -179,7 +189,9 @@
             <img src="img/img-aplus.jpg" width="358" height="578" alt="A+">
           </a>
           <div class="card-price">
-            <a href="#"><h3>a+</h3></a>
+            <a href="#">
+              <h3>a+</h3>
+            </a>
             <p>Сайт обучающий<br>для всех</p>
             <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
           </div>
@@ -189,7 +201,9 @@
             <img src="img/img-kvast.jpg" width="358" height="578" alt="kvast">
           </a>
           <div class="card-price">
-            <a href="#"><h3>kvast</h3></a>
+            <a href="#">
+              <h3>kvast</h3>
+            </a>
             <p>Крафтовый квас<br>всему голова!</p>
             <button class="button" type="submit" name="add-to-cart">9900&#8381;</button>
           </div>
@@ -214,7 +228,8 @@
   <footer class="footer">
     <section class="adress-section">
       <div class="adress-map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
+        <iframe src="https://yandex.ua/map-widget/v1/-/CCUQq-RQ2D">
+        </iframe>
       </div>
       <div class="adress-form">
         <address class="adress">
@@ -252,7 +267,8 @@
       </p>
       <p class="modal-item1">
         <label for="text-email">Ваш email:</label>
-        <input class="modal-input-mail" id="text-email" type="email" name="email" placeholder="email@example.com" required>
+        <input class="modal-input-mail" id="text-email" type="email" name="email" placeholder="email@example.com"
+          required>
       </p>
       <p class="modal-item2">
         <label for="text-post">Текст письма:</label>
